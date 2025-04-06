@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solução PO Geométrica</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h2>Solução Geométrica de PO</h2>
+    <form id="formRestricoes">
+        <div id="restricoesContainer">
+            <div class="restricao">
+                <input type="number" step="any" placeholder="a">x₁ +
+                <input type="number" step="any" placeholder="b">x₂ ≤
+                <input type="number" step="any" placeholder="c">
+            </div>
+        </div>
+        <button type="button" onclick="adicionarRestricao()">Adicionar restrição</button><br><br>
+
+        Z = <input type="number" id="za" step="any">x₁ +
+        <input type="number" id="zb" step="any">x₂
+        <br><label><input type="checkbox" id="max" checked> Maximizar</label><br><br>
+
+        <button type="button" onclick="resolverPO()">Resolver</button>
+    </form>
+
+    <h3>Resultado:</h3>
+    <pre id="saida">...</pre>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

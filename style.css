@@ -1,0 +1,70 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    background: #f8f3fc;
+    color: #4a355b;
+}
+
+h2, h3 {
+    color: #6a4b84;
+    text-align: center;
+}
+
+form {
+    background: #fff;
+    border: 2px solid #e0c7f3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(160, 120, 180, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+input[type="number"] {
+    width: 70px;
+    margin: 5px;
+    padding: 6px;
+    border: 1px solid #d1b3ec;
+    border-radius: 6px;
+    background: #faf5ff;
+    color: #4a355b;
+}
+
+.restricao {
+    margin-bottom: 10px;
+}
+
+button {
+    background: #a073d1;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8a5bb8;
+}
+
+label {
+    margin-left: 10px;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+    vertical-align: middle;
+}
+
+pre {
+    background: #f3eaff;
+    border-left: 6px solid #c49ce1;
+    padding: 15px;
+    border-radius: 8px;
+    white-space: pre-wrap;
+    font-family: 'Courier New', monospace;
+}
