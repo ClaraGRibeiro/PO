@@ -11,8 +11,8 @@ function adicionarRestricao() {
     const div = document.createElement('div')
     div.className = 'restricao'
     div.innerHTML = `
-<input type="number" step="any" placeholder="a">x₁ +
-<input type="number" step="any" placeholder="b">x₂ ≤
+<input type="number" step="any" placeholder="a">x1 +
+<input type="number" step="any" placeholder="b">x2 ≤
 <input type="number" step="any" placeholder="c">
 `
     container.appendChild(div)
@@ -101,9 +101,9 @@ function resolverPO() {
         }
     }
 
-    let resultado = `${max ? "Maximizar" : "Minimizar"}: Z = ${za}x₁ + ${zb}x₂\n`
+    let resultado = `${max ? "Maximizar" : "Minimizar"}: Z = ${za}x1 + ${zb}x2\n`
     resultado += "Restrições:\n"
-    restricoes.forEach((r, i) => resultado += `${i + 1}.) ${r.a}x₁ + ${r.b}x₂ <= ${r.c}\n`)
+    restricoes.forEach((r, i) => resultado += `${i + 1}.) ${r.a}x1 + ${r.b}x2 <= ${r.c}\n`)
     resultado += "\nPontos Válidos:\n"
     pontos.forEach((p, i) => resultado += `${i + 1}.) (${p.x1.toFixed(2)}, ${p.x2.toFixed(2)}); Z = ${calculaZ(p.x1, p.x2).toFixed(2)}\n`)
     resultado += `\nSolução ótima:\nx* = (${solucaoOtima.x1.toFixed(2)}, ${solucaoOtima.x2.toFixed(2)})\nZ* = ${Zsolucao.toFixed(2)}`

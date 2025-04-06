@@ -5,7 +5,7 @@ body {
     color: #4a355b;
 }
 
-h2, h3 {
+h1, h2 {
     color: #6a4b84;
     text-align: center;
 }
@@ -22,7 +22,7 @@ form {
 }
 
 input[type="number"] {
-    width: 70px;
+    width: 50px;
     margin: 5px;
     padding: 6px;
     border: 1px solid #d1b3ec;
@@ -34,6 +34,8 @@ input[type="number"] {
 .restricao {
     margin-bottom: 10px;
 }
+
+
 
 button {
     background: #a073d1;
@@ -66,5 +68,7 @@ pre {
     padding: 15px;
     border-radius: 8px;
     white-space: pre-wrap;
+    max-width: 600px;
+    margin: 0 auto;
     font-family: 'Courier New', monospace;
 }

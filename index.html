@@ -9,25 +9,25 @@
 </head>
 
 <body>
-    <h2>Solução Geométrica de PO</h2>
+    <h1>Solução Geométrica de PO</h1>
     <form id="formRestricoes">
         <div id="restricoesContainer">
             <div class="restricao">
-                <input type="number" step="any" placeholder="a">x₁ +
-                <input type="number" step="any" placeholder="b">x₂ ≤
+                <input type="number" step="any" placeholder="a">x1 +
+                <input type="number" step="any" placeholder="b">x2 ≤
                 <input type="number" step="any" placeholder="c">
             </div>
         </div>
         <button type="button" onclick="adicionarRestricao()">Adicionar restrição</button><br><br>
 
-        Z = <input type="number" id="za" step="any">x₁ +
-        <input type="number" id="zb" step="any">x₂
+        Z = <input type="number" id="za" step="any">x1 +
+        <input type="number" id="zb" step="any">x2
         <br><label><input type="checkbox" id="max" checked> Maximizar</label><br><br>
 
         <button type="button" onclick="resolverPO()">Resolver</button>
     </form>
 
-    <h3>Resultado:</h3>
+    <h2>Resultado:</h2>
     <pre id="saida">...</pre>
 
     <script src="./script.js"></script>
